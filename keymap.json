@@ -1,0 +1,65 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "j k": ["workspace::SendKeystrokes", "escape"],
+      "k j": ["workspace::SendKeystrokes", "escape"],
+      "ŋ": "editor::MoveLineUp", // RAlt-j
+      "alt-j": "editor::MoveLineUp", // Alt-j
+      "ɲ": "editor::MoveLineDown", // RAlt-k
+      "alt-k": "editor::MoveLineDown" // Alt-k
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ɔ": "editor::NewlineBelow", // RAlt-o
+      "alt-o": "editor::NewlineBelow", // Alt-o
+      "Ɔ": "editor::NewlineAbove", // RAlt-shift-o
+      "alt-shift-o": "editor::NewlineAbove", // Alt-shift-o
+      "∂ ∂": "editor::DeleteLine", // RAlt-dd
+      "alt-d alt-d": "editor::DeleteLine", // Alt-dd
+      "∂ $": "vim::DeleteToEndOfLine", // RAlt-d$
+      "alt-d alt-$": "vim::DeleteToEndOfLine", // Alt-d$
+      "¥ ¥": "vim::YankLine", // RAlt-yy
+      "alt-y alt-y": "vim::YankLine", // Alt-yy
+      "¥ ∑": "vim::Yank", // RAlt-yw
+      "alt-y alt-w": "vim::Yank",
+      "π": "vim::Paste", // RAlt-P
+      "alt-p": "vim::Paste", //RAlt-P
+      "≈": "editor::Delete", // RAlt-x
+      "alt-x": "editor::Delete", //Alt-x
+      "ç": "editor::Cut", // RAlt-c
+      "alt-c": "editor::Cut" //Alt-c
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "∂ ≈": "vim::VisualDelete", // Ralt-dx
+      "alt-d alt-x": "vim::VisualDelete", // alt-dx
+      "µ": ["workspace::SendKeystrokes", "escape i"], // RAlt-m
+      "alt-m": ["workspace::SendKeystrokes", "escape i"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "µ": ["workspace::SendKeystrokes", "escape v"], // RAlt-m
+      "alt-m": ["workspace::SendKeystrokes", "escape v"]
+    }
+  }
+]
