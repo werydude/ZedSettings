@@ -5,6 +5,7 @@
   {
     "label": "Pull Keybinds",
     "command": " > /dev/null; gitssh; git pull",
+    // gitssh -> eval (ssh-agent -c); ssh-add ~/.ssh/git_ed25519
     //"args": [],
     // Env overrides for the command, will be appended to the terminal's environment from the settings.
     //"env": { "foo": "bar" },
@@ -48,6 +49,7 @@
   {
     "label": "Push Keybinds",
     "command": " >/dev/null; gitssh; git add -A; echo \"Enter commit message\"; git commit -a -m \"$(read)\"; git pull --rebase; git push",
+    // gitssh -> eval (ssh-agent -c); ssh-add ~/.ssh/git_ed25519
     "args": [],
     // Env overrides for the command, will be appended to the terminal's environment from the settings.
     //"env": { "foo": "bar" },
