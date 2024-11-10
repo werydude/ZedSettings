@@ -46,6 +46,6 @@
       }
     }
   },
-
+  // This is a test
   "inlay_hints": { "enabled": true }
 }
