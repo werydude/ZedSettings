@@ -45,5 +45,7 @@
         "args": ["-d", "Arch"]
       }
     }
-  }
+  },
+
+  "inlay_hints": { "enabled": true }
 }
